@@ -16,8 +16,8 @@ Class Meal {
     + calculatesStock() : int
 }
 
-Meal --|> Salty
-Meal --|> Sweet
+Meal <|-- Salty: extends
+Meal <|-- Sweet: extends
 
 @enduml
 
