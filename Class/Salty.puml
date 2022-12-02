@@ -1,0 +1,8 @@
+@startuml Salty
+
+Class Salty {
+
+    - nature : string
+}
+
+@enduml

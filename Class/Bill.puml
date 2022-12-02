@@ -1,0 +1,12 @@
+@startuml Bill
+
+Class Bill{
+    - numberOfBill : int
+
+    + dowload()
+}
+
+@enduml
+
+
+

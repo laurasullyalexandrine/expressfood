@@ -1,0 +1,15 @@
+
+@startuml Customer
+left to right direction
+actor "Customer" as fc
+rectangle ExpressFood {
+  usecase "Search Food" as UC1
+  usecase "Order Food" as UC2
+  usecase "Pay order" as UC3
+  usecase "Follow order" as UC4
+}
+fc --> UC1
+fc --> UC2
+fc --> UC3
+fc --> UC4
+@enduml

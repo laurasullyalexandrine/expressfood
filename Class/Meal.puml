@@ -1,0 +1,24 @@
+@startuml Meal
+
+!include Salty.puml
+!include Sweet.puml
+
+
+Class Meal {
+
+    - type : string
+    - name : string
+    - ingredients : array
+    - price : int
+    - amount : int
+    - availablity : bool
+
+    + calculatesStock() : int
+}
+
+Meal --|> Salty
+Meal --|> Sweet
+
+@enduml
+
+

@@ -1,0 +1,24 @@
+@startuml deliveryMan
+
+!include Order.puml
+
+Class DeliveryMan {
+    - firstname : string
+    - phone : string
+    - availablity : bool
+    - email : string
+    - password : string
+    - longitude : int
+    - latitude : int
+
+    + login()
+    + calculatePosition()
+    + deliverFood()
+}
+
+DeliveryMan *-- Order: deliver >
+
+@enduml
+
+
+

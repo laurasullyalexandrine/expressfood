@@ -1,0 +1,14 @@
+@startuml Payment
+
+Class Payment {
+    - uniqueNumber : int
+    - type : string
+    - status : bool
+
+    + payTheOrder()
+}
+
+@enduml
+
+
+

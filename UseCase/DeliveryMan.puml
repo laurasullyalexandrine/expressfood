@@ -1,0 +1,13 @@
+
+@startuml DeliveryMan
+left to right direction
+actor "Delivery Man" as fc
+rectangle ExpressFood {
+  usecase "let me know I'm available" as UC1
+  usecase "Scan the order" as UC2
+  usecase "Deliver the order" as UC3
+}
+fc --> UC1
+fc --> UC2
+fc --> UC3
+@enduml

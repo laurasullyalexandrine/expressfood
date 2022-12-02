@@ -1,0 +1,12 @@
+@startuml BillManager
+
+Class BillManager {
+    - lines array
+
+    + createBill(int customer, int order, array meals, int teamExpressFood )
+}
+
+@enduml
+
+
+

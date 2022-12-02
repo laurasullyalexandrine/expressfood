@@ -1,0 +1,8 @@
+@startuml Sweet
+
+Class Sweet {
+
+    - nature : string
+}
+
+@enduml

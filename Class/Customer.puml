@@ -1,0 +1,19 @@
+@startuml Customer
+
+
+Class Customer {
+    - firstname : string
+    - lastname : string
+    - address : string
+    - phone : string
+    - email : string
+    - password : string
+    
+    + login()
+    + orderFood()
+    + trackOrder()
+    + downloadBill()
+}
+
+@enduml
+

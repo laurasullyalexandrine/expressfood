@@ -1,0 +1,16 @@
+@startuml TeamExpressFood
+
+Class TeamExpressFood {
+    - firstname : string
+    - lastname : string
+    - identifier : string
+    - password : string
+    
+    + login()
+    + addDishAndDessert()
+}
+
+@enduml
+
+
+
