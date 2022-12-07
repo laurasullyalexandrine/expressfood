@@ -1,0 +1,15 @@
+@startuml EquipeExpressFood
+
+Class EquipeExpressFood {
+    - prénom : string
+    - nom : string
+    - motDePasse : string
+    
+    + seConnecter()
+    + ajouteSaleEtSucre()
+}
+
+@enduml
+
+
+

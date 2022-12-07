@@ -1,0 +1,7 @@
+@startuml Sale
+
+Class Sale {
+
+}
+
+@enduml

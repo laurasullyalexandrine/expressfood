@@ -1,0 +1,11 @@
+@startuml Administrateur
+
+Class Administrateur {
+    - email : string
+    - motDePasse : string
+    
+    + seConnecter()
+    + administrerLeSite()
+}
+
+@enduml

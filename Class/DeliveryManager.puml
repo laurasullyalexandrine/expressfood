@@ -1,9 +1,0 @@
-@startuml DeliveryManager
-
-Class DeliveryManager {
-
-+ findDeliveryMan(order)
-+ startDelivery(order)
-}
-
-@enduml

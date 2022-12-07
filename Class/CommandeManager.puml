@@ -1,0 +1,11 @@
+@startuml CommandeManager
+
+Class CommandeManager {
+
+    + creerCommande(array plats, Client client)
+    + payOrder(Commande commande)
+    + createBill(Commande commande)
+    
+    }
+
+@enduml

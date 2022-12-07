@@ -1,0 +1,23 @@
+@startuml Livreur
+
+
+Class Livreur {
+    - prénom : string
+    - telephone : string
+    - disponibilite : bool
+    - email : string
+    - motDePasse : string
+    - longitude : int
+    - latitude : int
+    - plats : array
+
+    + seConnecter()
+    + calculerPosition()
+    + LivrerCommande()
+}
+
+
+@enduml
+
+
+

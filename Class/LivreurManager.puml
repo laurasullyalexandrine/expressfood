@@ -1,0 +1,11 @@
+@startuml LivreurManager
+
+Class LivreurManager {
+
+    - Livreurs : array
+
+    + trouverLivreur(Commande commande)
+    + startDelivery(Commande commande)
+}
+
+@enduml

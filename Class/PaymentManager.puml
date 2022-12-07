@@ -1,9 +1,0 @@
-@startuml PaymentManager
-
-
-Class PaymentManager {
-
-    + generateErrorMessage(int payment, int order, int customer)
-}
-
-@enduml

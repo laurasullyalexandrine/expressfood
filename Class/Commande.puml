@@ -1,0 +1,33 @@
+@startuml Order
+' syntaxe qui permet d'inclure une classe  
+!include Client.puml
+!include Plat.puml
+!include Paiement.puml
+!include Livreur.puml
+!include Facture.puml
+!include CommandeManger.puml
+!include LivreurManager.puml
+
+
+Class Commande {
+    - numeroDeCommande : int
+
+    + TelechargerCommande()
+}
+
+Client "1"--* Commande: commande >
+Commande *--* Plat: avoir <>
+Commande "1"--"1" Facture 
+Commande "1"-"1" Paiement
+Commande "1"--* LivreurManager: livre >
+LivreurManager *-* Plat
+LivreurManager <-- Commande: exec
+LivreurManager <-- LivreurManager: sync
+CommandeManger -- Paiement: creer >
+CommandeManger -- Commande: creer >
+CommandeManger -- Facture: creer >
+
+
+@enduml
+
+

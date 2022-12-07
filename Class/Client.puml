@@ -1,0 +1,20 @@
+@startuml Client
+
+
+Class Client {
+    - prénom : string
+    - nom : string
+    - addresse : string
+    - telephone : string
+    - email : string
+    - motDePasse : string
+    
+    + inscription()
+    + seConnecter()
+    + CommanderPlat()
+    + SuivreCommande()
+    + TelechargerFacture()
+}
+
+@enduml
+

@@ -1,9 +1,0 @@
-@startuml OrderManager
-
-Class OrderManager {
-
-+ createOrder(array meals)
-+ payOrder(order)
-}
-
-@enduml

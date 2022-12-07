@@ -1,0 +1,14 @@
+@startuml Paiement
+
+Class Paiement {
+    - numeroUnique : int
+    - type : string
+    - status : bool
+
+    + payerCommande()
+}
+
+@enduml
+
+
+
