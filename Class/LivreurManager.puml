@@ -5,7 +5,7 @@ Class LivreurManager {
     - Livreurs : array
 
     + trouverLivreur(Commande commande)
-    + startDelivery(Commande commande)
+    + DemarerLivraison(Commande commande)
 }
 
 @enduml

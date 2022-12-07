@@ -5,7 +5,7 @@
 !include Paiement.puml
 !include Livreur.puml
 !include Facture.puml
-!include CommandeManger.puml
+!include CommandeManager.puml
 !include LivreurManager.puml
 
 
@@ -22,10 +22,10 @@ Commande "1"-"1" Paiement
 Commande "1"--* LivreurManager: livre >
 LivreurManager *-* Plat
 LivreurManager <-- Commande: exec
-LivreurManager <-- LivreurManager: sync
-CommandeManger -- Paiement: creer >
-CommandeManger -- Commande: creer >
-CommandeManger -- Facture: creer >
+LivreurManager <-- Livreur: sync
+CommandeManager -- Paiement: creer >
+CommandeManager -- Commande: creer >
+CommandeManager -- Facture: creer >
 
 
 @enduml

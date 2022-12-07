@@ -1,9 +1,9 @@
-@startuml Bill
+@startuml Facture
 
-Class Bill{
-    - numberOfBill : int
+Class Facture {
+    - numeroFacture : int
 
-    + dowload()
+    + telechargerFacture()
 }
 
 @enduml
