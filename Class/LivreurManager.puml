@@ -1,7 +1,6 @@
 @startuml LivreurManager
 
 Class LivreurManager {
-
     - Livreurs : array
 
     + trouverLivreur(Commande commande)

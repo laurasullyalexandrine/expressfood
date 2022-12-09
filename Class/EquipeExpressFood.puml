@@ -4,6 +4,7 @@ Class EquipeExpressFood {
     - prénom : string
     - nom : string
     - motDePasse : string
+    - roles: json
     
     + seConnecter()
     + ajouteSaleEtSucre()

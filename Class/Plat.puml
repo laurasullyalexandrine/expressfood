@@ -5,7 +5,6 @@
 
 
 Class Plat {
-
     - type : string
     - nom : string
     - ingredients : array

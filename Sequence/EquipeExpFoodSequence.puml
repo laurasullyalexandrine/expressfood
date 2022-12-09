@@ -1,4 +1,4 @@
-@startuml ClientSequence
+@startuml EquipeExpFood
 
 skinparam responseMessageBelowArrow true
 skinparam SequenceMessageAlignment center
