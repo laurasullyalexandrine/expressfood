@@ -1,0 +1,20 @@
+
+@startuml EquipeExpFood
+
+left to right direction
+
+actor "EquipeExpFood" as EquipeExpFood
+
+rectangle ExpressFood {
+  usecase "Ajouter plat salé" as UC1
+  usecase "Ajouter dessert" as UC2
+  usecase "Vérifier le stock" as UC3
+  usecase "Afficher la liste des commandes du jour" as UC4
+}
+
+EquipeExpFood --> UC1
+EquipeExpFood --> UC2
+EquipeExpFood --> UC3
+EquipeExpFood --> UC4
+
+@enduml

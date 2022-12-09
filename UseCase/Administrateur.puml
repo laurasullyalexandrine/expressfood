@@ -1,0 +1,20 @@
+
+@startuml Administrateur
+
+left to right direction
+
+actor "Administrateur" as Administrateur
+
+rectangle ExpressFood {
+  usecase "Maintenance préventive" as UC1
+  usecase "Réparer les bugs" as UC2
+  usecase "Mise à jour de l'application" as UC3
+  usecase "Gestion des utilisateurs" as UC4
+}
+
+Administrateur --> UC1
+Administrateur --> UC2
+Administrateur --> UC3
+Administrateur --> UC4
+
+@enduml

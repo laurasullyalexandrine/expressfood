@@ -1,0 +1,20 @@
+
+@startuml Livreur
+
+left to right direction
+
+actor "Livreur" as Livreur
+
+rectangle ExpressFood {
+  usecase "Se connecter" as UC1
+  usecase "Notifier sa disponibilité" as UC2
+  usecase "Prendre en charge la livraison" as UC3
+  usecase "Livrer la commande" as UC4
+}
+
+Livreur --> UC1
+Livreur --> UC2
+Livreur --> UC3
+Livreur --> UC4
+
+@enduml

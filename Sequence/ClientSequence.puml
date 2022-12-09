@@ -1,0 +1,39 @@
+@startuml ClientSequence
+
+skinparam responseMessageBelowArrow true
+skinparam SequenceMessageAlignment center
+
+actor Client as Client #Plum
+
+entity Repas as Repas #LightYellow
+entity Commande as Commande #LightYellow
+entity Paiement as Paiement #LightYellow
+entity Facture as Facture #LightYellow
+
+database ExpressFood as ExpressFood #HotPink
+
+
+Client -> ExpressFood: demander inscription
+alt successful case
+ExpressFood -> Client: valider inscription 
+
+Client  -> ExpressFood: demander authentification 
+ExpressFood -> Client: valider authentification 
+
+Client  --> Repas: rechercher repas
+Repas  --> Client: afficher repas
+Repas -> Repas: vérifier disponibilité
+Client -> Repas: sélectionner salé et sucré
+
+Client -> Commande: créer commande
+Commande --> Client: valider commande
+
+Commande --> Paiement: créer le paiement
+Client -> Paiement: payer la commande
+Paiement -> Client: valider le paiement
+
+Commande --> Facture: créer la facture
+Facture --> Client: télécharger votre facture
+
+end
+@enduml

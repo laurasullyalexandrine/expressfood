@@ -1,0 +1,24 @@
+
+@startuml Client
+
+left to right direction
+
+actor "Client" as Client
+
+rectangle ExpressFood {
+  usecase "S'inscrire" as UC1
+  usecase "Se connecter" as UC2
+  usecase "Rechercher des plats" as UC3
+  usecase "Commander des plats" as UC4
+  usecase "Payer sa commande" as UC5
+  usecase "Suivre sa commande" as UC6
+}
+
+Client --> UC1
+Client --> UC2
+Client --> UC3
+Client --> UC4
+Client --> UC5
+Client --> UC6
+
+@enduml

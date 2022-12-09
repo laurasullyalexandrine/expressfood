@@ -1,0 +1,29 @@
+@startuml ClientSequence
+
+skinparam responseMessageBelowArrow true
+skinparam SequenceMessageAlignment center
+
+actor EquipeExpFood as EquipeExpFood #LightBlue
+
+entity Repas as Repas #LightYellow
+entity Commande as Commande #LightYellow
+
+database ExpressFood as ExpressFood #HotPink
+
+EquipeExpFood -> ExpressFood: demander authentification
+alt successful case
+ExpressFood -> EquipeExpFood: valider authentification 
+
+EquipeExpFood -> ExpressFood: demander inscription livreur
+ExpressFood -> EquipeExpFood: valider inscription livreur
+
+EquipeExpFood -> Repas: ajouter plat salé
+Repas -> EquipeExpFood : valider ajout plat salé
+
+EquipeExpFood -> Repas: ajouter plat sucré
+Repas -> EquipeExpFood : valider ajout plat sucré
+
+
+
+end
+@enduml
