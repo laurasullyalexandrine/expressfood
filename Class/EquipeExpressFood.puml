@@ -3,7 +3,7 @@
 Class EquipeExpressFood {
     - email : string
     - motDePasse : string
-    - roles: json
+    - roles: array
     
     + seConnecter()
     + ajouteSaleEtSucre()

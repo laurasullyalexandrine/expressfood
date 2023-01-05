@@ -2,7 +2,7 @@
 
 Class Paiement {
     - numeroUnique : int
-    - type : json
+    - type : array
     - status : bool
 
     + payerCommande()
