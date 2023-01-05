@@ -1,8 +1,7 @@
 @startuml EquipeExpressFood
 
 Class EquipeExpressFood {
-    - prénom : string
-    - nom : string
+    - email : string
     - motDePasse : string
     - roles: json
     

@@ -1,0 +1,12 @@
+@startuml Chef
+
+Class Chef {
+    - prenom : string
+    - nom : string
+
+}
+
+@enduml
+
+
+

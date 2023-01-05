@@ -7,6 +7,7 @@
 !include Facture.puml
 !include CommandeManager.puml
 !include LivreurManager.puml
+!include Chef.puml
 
 
 Class Commande {
@@ -15,6 +16,7 @@ Class Commande {
     + TelechargerCommande()
 }
 
+Chef "1"--* Plat: creer >
 Client "1"--* Commande: commande >
 Commande *--* Plat: avoir <>
 Commande "1"--"1" Facture 
