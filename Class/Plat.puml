@@ -5,10 +5,10 @@
 
 
 Class Plat {
-    - type : string
     - nom : string
-    - ingredients : array
+    - type : string
     - nature : string
+    - ingredients : array
     - prix : int
     - quantité : int
     - disponibilité : bool

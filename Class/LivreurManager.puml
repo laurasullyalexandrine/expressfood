@@ -3,8 +3,9 @@
 Class LivreurManager {
     - Livreurs : array
 
+    + CalculerStockPlat(Plat plat)
     + trouverLivreur(Commande commande)
-    + DemarerLivraison(Commande commande)
+    + DemmarerLivraison(Commande commande)
 }
 
 @enduml
