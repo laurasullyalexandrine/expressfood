@@ -1,0 +1,17 @@
+@startuml Dessert
+
+Class Dessert {
+    - nom : string
+    - type : string
+    - nature : string
+    - ingredients : array
+    - prix : int
+    - stock : int
+    - disponibilité : bool
+
+    + calculerStock() : int
+}
+
+@enduml
+
+

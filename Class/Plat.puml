@@ -1,23 +1,16 @@
 @startuml Plat
 
-!include Sale.puml
-!include Sucre.puml
-
-
 Class Plat {
     - nom : string
     - type : string
     - nature : string
     - ingredients : array
     - prix : int
-    - quantité : int
+    - stock : int
     - disponibilité : bool
 
-    + calculersStock() : int
+    + calculerStock() : int
 }
-
-Plat <|-- Sale: extends
-Plat <|-- Sucre: extends
 
 @enduml
 

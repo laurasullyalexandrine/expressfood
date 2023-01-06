@@ -3,6 +3,7 @@
 Class Administrateur {
     - email : string
     - motDePasse : string
+    - roles : array
     
     + seConnecter()
     + administrerLeSite()

@@ -8,6 +8,7 @@
 !include CommandeManager.puml
 !include LivreurManager.puml
 !include Chef.puml
+!include Dessert.puml
 
 
 Class Commande {
@@ -17,11 +18,13 @@ Class Commande {
 }
 
 Chef "1"--* Plat: creer >
+Chef "1"--* Dessert: creer >
 Client "1"--* Commande: commande >
 Commande *--* Plat: avoir <>
 Commande "1"--"1" Facture 
+Commande *--* Dessert: avoir <>
 Commande "1"-"1" Paiement
-Commande "1"--* LivreurManager: livre >
+Commande *--"1" Livreur: livre >
 LivreurManager *-* Plat
 LivreurManager <-- Commande: exec
 LivreurManager <-- Livreur: sync
