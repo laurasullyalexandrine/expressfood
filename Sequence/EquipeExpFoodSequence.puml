@@ -17,11 +17,11 @@ ExpressFood -> EquipeExpFood: valider authentification
 EquipeExpFood -> ExpressFood: demander inscription livreur
 ExpressFood -> EquipeExpFood: valider inscription livreur
 
-EquipeExpFood -> Repas: ajouter plat salé
-Repas -> EquipeExpFood : valider ajout plat salé
+EquipeExpFood -> Repas: ajouter sale
+Repas -> EquipeExpFood : valider ajout sale
 
-EquipeExpFood -> Repas: ajouter plat sucré
-Repas -> EquipeExpFood : valider ajout plat sucré
+EquipeExpFood -> Repas: ajouter sucre
+Repas -> EquipeExpFood : valider ajout sucre
 
 
 

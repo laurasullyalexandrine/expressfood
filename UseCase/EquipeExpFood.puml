@@ -9,8 +9,8 @@ rectangle ExpressFood {
   usecase "Créer un compte admin" as UC1
   usecase "Se connecter" as UC2
   usecase "Créer un compte livreur" as UC3
-  usecase "Ajouter des plats salé" as UC4
-  usecase "Ajouter des desserts" as UC5
+  usecase "Ajouter des plats salés" as UC4
+  usecase "Ajouter des plats sucrés" as UC5
   usecase "Vérifier le stock" as UC6
   usecase "Afficher la liste des commandes du jour" as UC7
 }

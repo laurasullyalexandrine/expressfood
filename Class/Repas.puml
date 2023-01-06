@@ -4,17 +4,16 @@
 !include Sucre.puml
 
 
-Class Repas {
+abstract Class  Repas {
     - nom : string
     - type : string
     - nature : string
     - ingredients : array
     - prix : int
-    - quantité : int
     - stock : int
-    - disponibilité : bool
 
     + calculerStock() : int
+    +enStock() : bool
 }
 
 Repas <|-- Sale: extends

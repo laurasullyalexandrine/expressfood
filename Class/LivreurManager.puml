@@ -3,7 +3,7 @@
 Class LivreurManager {
     - Livreurs : array
 
-    + CalculerStockPlat(Plat plat)
+    + CalculerStockrepas(Repas repas)
     + trouverLivreur(Commande commande)
     + DemmarerLivraison(Commande commande)
 }

@@ -9,7 +9,7 @@ Class Livreur {
     - motDePasse : string
     - longitude : int
     - latitude : int
-    - plats : array
+    - repas : array
 
     + seConnecter()
     + calculerPosition()

@@ -11,7 +11,7 @@ Class Client {
     
     + inscription()
     + seConnecter()
-    + CommanderPlat()
+    + CommanderRepas()
     + SuivreCommande()
     + TelechargerFacture()
 }

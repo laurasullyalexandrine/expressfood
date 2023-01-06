@@ -23,7 +23,7 @@ Commande *--* Repas: avoir <>
 Commande "1"--"1" Facture 
 Paiement "1"-"1" Commande
 Commande *--"1" Livreur: livre >
-Repas *-* LivreurManager
+Repas *-* Livreur
 LivreurManager <-- Commande: exec
 Livreur <-- LivreurManager: sync
 CommandeManager -- Paiement: creer >

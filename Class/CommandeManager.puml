@@ -2,7 +2,7 @@
 
 Class CommandeManager {
 
-    + creerCommande(array plats, Client client)
+    + creerCommande(array repas, Client client)
     + creerListeCommandeDuJour(Commande commande)
     + payerCommande(Commande commande)
     + creerFacture(Commande commande)
