@@ -4,8 +4,8 @@ Class CommandeManager {
 
     + creerCommande(array plats, Client client)
     + creerListeCommandeDuJour(Commande commande)
-    + payOrder(Commande commande)
-    + createBill(Commande commande)
+    + payerCommande(Commande commande)
+    + creerFacture(Commande commande)
     
     }
 

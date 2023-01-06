@@ -1,14 +1,13 @@
 @startuml Order
 ' syntaxe qui permet d'inclure une classe  
 !include Client.puml
-!include Plat.puml
+!include Repas.puml
 !include Paiement.puml
 !include Livreur.puml
 !include Facture.puml
 !include CommandeManager.puml
 !include LivreurManager.puml
 !include Chef.puml
-!include Dessert.puml
 
 
 Class Commande {
@@ -17,17 +16,16 @@ Class Commande {
     + TelechargerCommande()
 }
 
-Chef "1"--* Plat: creer >
-Chef "1"--* Dessert: creer >
+Sale *--"1" Chef: creer <
+Sucre *--"1" Chef: creer <
 Client "1"--* Commande: commande >
-Commande *--* Plat: avoir <>
+Commande *--* Repas: avoir <>
 Commande "1"--"1" Facture 
-Commande *--* Dessert: avoir <>
-Commande "1"-"1" Paiement
+Paiement "1"-"1" Commande
 Commande *--"1" Livreur: livre >
-LivreurManager *-* Plat
+Repas *-* LivreurManager
 LivreurManager <-- Commande: exec
-LivreurManager <-- Livreur: sync
+Livreur <-- LivreurManager: sync
 CommandeManager -- Paiement: creer >
 CommandeManager -- Commande: creer >
 CommandeManager -- Facture: creer >

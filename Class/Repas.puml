@@ -1,10 +1,10 @@
-@startuml Plat
+@startuml Repas
 
 !include Sale.puml
 !include Sucre.puml
 
 
-Class Plat {
+Class Repas {
     - nom : string
     - type : string
     - nature : string
@@ -17,8 +17,8 @@ Class Plat {
     + calculerStock() : int
 }
 
-Plat <|-- Sale: extends
-Plat <|-- Sucre: extends
+Repas <|-- Sale: extends
+Repas <|-- Sucre: extends
 
 @enduml
 
