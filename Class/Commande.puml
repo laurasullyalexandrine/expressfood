@@ -18,15 +18,15 @@ Class Commande {
 
 Sale *--"1" Chef: creer <
 Sucre *--"1" Chef: creer <
-Client "1"--* Commande: commande >
+Commande *--"1" Client: commande >
 Commande *--* Repas: avoir <>
 Commande "1"--"1" Facture 
 Paiement "1"-"1" Commande
 Commande *--"1" Livreur: livre >
-Repas *-* Livreur
+Livreur *-* Repas: avoir <>
 LivreurManager <-- Commande: exec
-Livreur <-- LivreurManager: sync
-CommandeManager -- Paiement: creer >
+LivreurManager --> Livreur: sync
+Paiement -- CommandeManager: creer <
 CommandeManager -- Commande: creer >
 CommandeManager -- Facture: creer >
 
