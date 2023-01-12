@@ -20,10 +20,10 @@ ExpressFood -> Client: valider inscription
 Client  -> ExpressFood: demander authentification 
 ExpressFood -> Client: valider authentification 
 
-Client  --> Repas: rechercher repas
-Repas  --> Client: afficher repas
+Client  --> Repas: se renseigner sur repas
+Repas  --> Client: afficher détails repas
 Repas -> Repas: vérifier disponibilité
-Client -> Repas: sélectionner salé et sucré
+Client -> Repas: sélectionner salé et/ou sucré
 
 Client -> Commande: créer commande
 Commande --> Client: valider commande
@@ -33,7 +33,7 @@ Client -> Paiement: payer la commande
 Paiement -> Client: valider le paiement
 
 Commande --> Facture: créer la facture
-Facture --> Client: télécharger votre facture
+Facture --> Client: télécharger la facture
 
 end
 @enduml

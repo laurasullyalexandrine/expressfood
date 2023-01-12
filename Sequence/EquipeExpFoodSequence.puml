@@ -23,7 +23,8 @@ Repas -> EquipeExpFood : valider ajout sale
 EquipeExpFood -> Repas: ajouter sucre
 Repas -> EquipeExpFood : valider ajout sucre
 
-
+EquipeExpFood -> ExpressFood: vérifier stock repas
+ExpressFood -> EquipeExpFood : afficher stock repas
 
 end
 @enduml

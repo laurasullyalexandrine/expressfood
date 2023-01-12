@@ -12,10 +12,10 @@ actor Client as Client #Plum
 database ExpressFood as ExpressFood #HotPink
 
 Livreur -> ExpressFood: demander authentification
+alt successful case
 ExpressFood -> Livreur: valider authentification 
 
 Livreur -> Livreur: vérifier disponibilité
-alt successful case
 Livreur -> Commande: prendre en charge la commande
 
 Livreur --> Temps:livrer - 20 min
