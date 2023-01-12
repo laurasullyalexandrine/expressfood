@@ -7,10 +7,10 @@ actor "Livreur" as Livreur
 
 rectangle ExpressFood {
   usecase "Se connecter" as UC1
-  usecase "Notifier sa disponibilité" as UC2
+  usecase "Informer de sa disponibilité" as UC2
   usecase "Informer du stock disponible" as UC3
-  usecase "Prendre en charge la livraison" as UC4
-  usecase "Livrer la commande" as UC5
+  usecase "Informer de la prise en charge d'une livraison" as UC4
+  usecase "Valider la livraison" as UC5
 }
 
 Livreur --> UC1

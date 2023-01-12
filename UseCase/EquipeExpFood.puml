@@ -6,13 +6,12 @@ left to right direction
 actor "EquipeExpFood" as EquipeExpFood
 
 rectangle ExpressFood {
-  usecase "Créer un compte admin" as UC1
+  usecase "Créer un compte admin-éditeur" as UC1
   usecase "Se connecter" as UC2
-  usecase "Créer un compte livreur" as UC3
-  usecase "Ajouter des plats salés" as UC4
-  usecase "Ajouter des plats sucrés" as UC5
-  usecase "Vérifier le stock" as UC6
-  usecase "Afficher la liste des commandes du jour" as UC7
+  usecase "Ajouter des plats du jour" as UC3
+  usecase "Vérifier le stock" as UC4
+  usecase "Créer un compte livreur" as UC5
+  usecase "Afficher la liste des commandes du jour" as UC6
 }
 
 EquipeExpFood --> UC1
@@ -21,7 +20,6 @@ EquipeExpFood --> UC3
 EquipeExpFood --> UC4
 EquipeExpFood --> UC5
 EquipeExpFood --> UC6
-EquipeExpFood --> UC7
 
 
 

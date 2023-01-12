@@ -8,10 +8,10 @@ actor "Administrateur" as Administrateur
 rectangle ExpressFood {
   usecase "Créer un compte super admin" as UC1
   usecase "Se connecter" as UC2
-  usecase "Maintenance préventive" as UC3
-  usecase "Réparer les bugs" as UC4
-  usecase "Mise à jour de l'application" as UC5
-  usecase "Gestion des utilisateurs" as UC6
+  usecase "Faire de la maintenance préventive" as UC3
+  usecase "Corriger les bugs" as UC4
+  usecase "Mettre à jour l'application" as UC5
+  usecase "Gérer les comptes utilisateurs" as UC6
 }
 
 Administrateur --> UC1
