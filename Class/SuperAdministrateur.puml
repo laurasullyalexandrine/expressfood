@@ -1,0 +1,12 @@
+@startuml Super Administrateur
+
+Class SuperAdministrateur {
+    - email : string
+    - motDePasse : string
+    - roles : array
+    
+    + seConnecter()
+    + administrerLeSite()
+}
+
+@enduml

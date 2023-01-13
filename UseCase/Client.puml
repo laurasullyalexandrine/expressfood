@@ -3,7 +3,7 @@
 
 left to right direction
 
-actor "Client" as Client
+actor "Client" as Client #Plum
 
 rectangle ExpressFood {
   usecase "S'inscrire" as UC1

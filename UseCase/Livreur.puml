@@ -3,13 +3,13 @@
 
 left to right direction
 
-actor "Livreur" as Livreur
+actor "Livreur" as Livreur #GreenYellow
 
 rectangle ExpressFood {
   usecase "Se connecter" as UC1
   usecase "Informer de sa disponibilité" as UC2
   usecase "Informer du stock disponible" as UC3
-  usecase "Informer de la prise en charge d'une livraison" as UC4
+  usecase "Informer de la prise en charge d'une commande" as UC4
   usecase "Valider la livraison" as UC5
 }
 

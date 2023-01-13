@@ -3,15 +3,17 @@
 
 left to right direction
 
-actor "EquipeExpFood" as EquipeExpFood
+actor "EquipeExpFood" as EquipeExpFood #LightBlue
 
 rectangle ExpressFood {
-  usecase "Créer un compte admin-éditeur" as UC1
+  usecase "Créer un compte" as UC1
+  usecase "Créer un compte livreur" as UC7
   usecase "Se connecter" as UC2
   usecase "Ajouter des plats du jour" as UC3
-  usecase "Vérifier le stock" as UC4
-  usecase "Créer un compte livreur" as UC5
-  usecase "Afficher la liste des commandes du jour" as UC6
+  usecase "Modfier des plats du jour" as UC4
+  usecase "Supprimer des plats du jour" as UC5
+  usecase "Vérifier le stock" as UC6
+  usecase "Afficher la liste des commandes du jour" as UC8
 }
 
 EquipeExpFood --> UC1
@@ -20,6 +22,8 @@ EquipeExpFood --> UC3
 EquipeExpFood --> UC4
 EquipeExpFood --> UC5
 EquipeExpFood --> UC6
+EquipeExpFood --> UC7
+EquipeExpFood --> UC8
 
 
 

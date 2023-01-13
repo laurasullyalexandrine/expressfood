@@ -1,0 +1,24 @@
+
+@startuml SuperAdministrateur
+
+left to right direction
+
+actor "Super Administrateur" as SuperAdministrateur #Red
+
+rectangle ExpressFood {
+  usecase "Créer un compte super admin" as UC1
+  usecase "Se connecter" as UC2
+  usecase "Faire de la maintenance préventive" as UC3
+  usecase "Corriger les bugs" as UC4
+  usecase "Mettre à jour l'application" as UC5
+  usecase "Gérer les comptes utilisateurs" as UC6
+}
+
+SuperAdministrateur --> UC1
+SuperAdministrateur --> UC2
+SuperAdministrateur --> UC3
+SuperAdministrateur --> UC4
+SuperAdministrateur --> UC5
+SuperAdministrateur --> UC6
+
+@enduml
