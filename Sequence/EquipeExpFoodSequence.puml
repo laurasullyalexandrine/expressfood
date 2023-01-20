@@ -6,22 +6,29 @@ skinparam SequenceMessageAlignment center
 actor EquipeExpFood as EquipeExpFood #LightBlue
 
 entity Repas as Repas #LightYellow
-entity Commande as Commande #LightYellow
 
 database ExpressFood as ExpressFood #HotPink
 
 EquipeExpFood -> ExpressFood: demander authentification
-alt successful case
+alt cas réussi
 ExpressFood -> EquipeExpFood: valider authentification 
+else échec de l'authentification 
+ExpressFood -> EquipeExpFood: identification invalides
 
 EquipeExpFood -> ExpressFood: demander inscription livreur
 ExpressFood -> EquipeExpFood: valider inscription livreur
+else échec de l'inscription
+ExpressFood -> EquipeExpFood: il existe déjà un compte avec cet email
 
 EquipeExpFood -> Repas: ajouter sale
 Repas -> EquipeExpFood : valider ajout sale
+else échec ajout
+Repas -> EquipeExpFood : Chef ne peut être nul 
 
 EquipeExpFood -> Repas: ajouter sucre
 Repas -> EquipeExpFood : valider ajout sucre
+else échec ajout
+Repas -> EquipeExpFood : vous n'avez pas les droits pour effectuer cette action
 
 EquipeExpFood -> ExpressFood: vérifier stock repas
 ExpressFood -> EquipeExpFood : afficher stock repas

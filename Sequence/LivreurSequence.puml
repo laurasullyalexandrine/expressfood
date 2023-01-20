@@ -6,22 +6,32 @@ skinparam SequenceMessageAlignment center
 actor Livreur as Livreur #GreenYellow
 
 entity Commande as Commande #LightYellow
+entity Repas as Repas #LightYellow
 
 actor Client as Client #Plum
 
 database ExpressFood as ExpressFood #HotPink
+actor APIGeolocalisation as APIGeolocalisation #GoldenRod
 
 Livreur -> ExpressFood: demander authentification
 alt successful case
 ExpressFood -> Livreur: valider authentification 
+else identification invalides
+ExpressFood -> Livreur: échec de l'authentification 
 
 Livreur -> Livreur: vérifier disponibilité
 Livreur -> Commande: prendre en charge la commande
+else livreur non disponible
+Livreur -> Livreur: en cours de livraison
+else else livreur non disponible
+Livreur -> Repas: stock repas insuffisant pour livrer une commande complète
 
-Livreur --> Temps:livrer - 20 min
+Livreur --> APIGeolocalisation: temps de livraion - 20 min
+else livreur non disponible 
+Livreur --> APIGeolocalisation: temps de livraion + 20 min
+
 Client --> Livreur: suivre livreur
-
-Livreur -> Commande: valider la livraison
+Client -> Commande: valider la livraison
 
 end
 @enduml

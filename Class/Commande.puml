@@ -12,7 +12,8 @@
 
 Class Commande {
     - numeroDeCommande : int
-
+    - dateDeCommande : DateTime
+    - statutDeCommande : string
     + TelechargerCommande()
 }
 

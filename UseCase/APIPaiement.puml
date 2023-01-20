@@ -1,0 +1,20 @@
+
+@startuml APIPaiement
+
+left to right direction
+
+actor "APIPaiement" as APIPaiement #Gold
+rectangle ExpressFood {
+  usecase "Transmission du détail de la commande" as UC1
+  usecase "Transmission du formulaire hébergé" as UC2
+  usecase "Validation des informations de paiement" as UC3
+}
+
+APIPaiement <-- UC1
+APIPaiement --> UC2
+APIPaiement <-- UC3
+
+UC2 -> UC3
+
+
+@enduml

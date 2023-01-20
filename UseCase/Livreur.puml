@@ -8,9 +8,9 @@ actor "Livreur" as Livreur #GreenYellow
 rectangle ExpressFood {
   usecase "Se connecter" as UC1
   usecase "Informer de sa disponibilité" as UC2
-  usecase "Informer du stock disponible" as UC3
+  usecase "Informer du stock de plats disponible" as UC3
   usecase "Informer de la prise en charge d'une commande" as UC4
-  usecase "Valider la livraison" as UC5
+  usecase "Valider la livraison chez le client" as UC5
 }
 
 Livreur --> UC1

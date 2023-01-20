@@ -12,24 +12,35 @@ entity Facture as Facture #LightYellow
 
 database ExpressFood as ExpressFood #HotPink
 
-
 Client -> ExpressFood: demander inscription
-alt successful case
-ExpressFood -> Client: valider inscription 
+alt cas réussi
+ExpressFood -> Client: valider inscription
+else email déjà existant 
+ExpressFood -> Client: échec de l'inscription
 
 Client  -> ExpressFood: demander authentification 
 ExpressFood -> Client: valider authentification 
+else identification invalides
+ExpressFood -> Client: échec de l'authentification
 
-Client  --> Repas: se renseigner sur repas
-Repas  --> Client: afficher détails repas
+Client  -> Repas: se renseigner sur repas
+Repas  -> Client: afficher détails repas
+else repas n'existe pas 
+Repas  -> Client: le plat recherché n'exite pas
+
 Repas -> Repas: vérifier disponibilité
-Client -> Repas: sélectionner salé et/ou sucré
 
+Client -> Repas: sélectionner salé et/ou sucré
 Client -> Commande: créer commande
 Commande --> Client: valider commande
+else quantité non disponible 
+Repas -> Repas: plat n'est plus en stock
+
+Client -> Paiement: payer la commande
+else cas d'erreur
+Paiement -> Client: authentification bancaire refusée
 
 Commande --> Paiement: créer le paiement
-Client -> Paiement: payer la commande
 Paiement -> Client: valider le paiement
 
 Commande --> Facture: créer la facture

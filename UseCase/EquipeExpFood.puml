@@ -7,12 +7,12 @@ actor "EquipeExpFood" as EquipeExpFood #LightBlue
 
 rectangle ExpressFood {
   usecase "Créer un compte" as UC1
-  usecase "Créer un compte livreur" as UC7
   usecase "Se connecter" as UC2
+  usecase "Créer un compte livreur" as UC7
   usecase "Ajouter des plats du jour" as UC3
   usecase "Modfier des plats du jour" as UC4
   usecase "Supprimer des plats du jour" as UC5
-  usecase "Vérifier le stock" as UC6
+  usecase "Vérifier le stock de plats" as UC6
   usecase "Afficher la liste des commandes du jour" as UC8
 }
 

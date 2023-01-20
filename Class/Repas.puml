@@ -3,7 +3,6 @@
 !include Sale.puml
 !include Sucre.puml
 
-
 abstract Class  Repas {
     - nom : string
     - type : string
@@ -13,7 +12,7 @@ abstract Class  Repas {
     - stock : int
 
     + calculerStock() : int
-    +enStock() : bool
+    + enStock() : bool
 }
 
 Repas <|-- Sale: extends

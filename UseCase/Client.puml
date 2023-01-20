@@ -10,9 +10,9 @@ rectangle ExpressFood {
   usecase "Se connecter" as UC2
   usecase "S'informer sur les repas" as UC3
   usecase "Etre informer de la disponibilité des plats" as UC4
-  usecase "Passer une commande" as UC5
+  usecase "Passer sa commande" as UC5
   usecase "Payer sa commande" as UC6
-  usecase "Suivre sa commande" as UC7
+  usecase "Suivre sa commande en cours de livraison" as UC7
 }
 
 Client --> UC1
