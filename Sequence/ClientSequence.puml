@@ -25,7 +25,7 @@ ExpressFood -> Client: échec de l'authentification
 
 Client  -> Repas: se renseigner sur repas
 Repas  -> Client: afficher détails repas
-else repas n'existe pas 
+else ce plat n'existe pas 
 Repas  -> Client: le plat recherché n'exite pas
 
 Repas -> Repas: vérifier disponibilité
@@ -34,7 +34,7 @@ Client -> Repas: sélectionner salé et/ou sucré
 Client -> Commande: créer commande
 Commande --> Client: valider commande
 else quantité non disponible 
-Repas -> Repas: plat n'est plus en stock
+Repas -> Repas: ce plat n'est plus en stock
 
 Client -> Paiement: payer la commande
 else cas d'erreur

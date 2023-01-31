@@ -7,12 +7,13 @@ actor "APIGeolocalisation" as APIGeolocalisation #GoldenRod
 
 rectangle ExpressFood {
   usecase "Envoyer les coordonnées GPS du livreur" as UC1
-  usecase "Donner la position d'un livreur" as UC2
-  usecase "Estimer le temps de trajet entre un livreur et un client" as UC3
+  usecase "Transmettre la position d'un livreur" as UC2
+  usecase "Envoyer les coordonnées GPS du client" as UC3
+  usecase "Estimer le temps de trajet entre un livreur et un client" as UC4
 }
 
 APIGeolocalisation <-- UC1
-APIGeolocalisation --> UC2
+APIGeolocalisation <-- UC2
 APIGeolocalisation --> UC3
-
+APIGeolocalisation --> UC4
 @enduml
